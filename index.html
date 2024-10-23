@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e32e55a19986258243be5a8cc09412ef {
+                #map_41a0863e3fb33a147652c8d47de8ede5 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_e32e55a19986258243be5a8cc09412ef" ></div>
+            <div class="folium-map" id="map_41a0863e3fb33a147652c8d47de8ede5" ></div>
         
 </body>
 <script>
     
     
-            var map_e32e55a19986258243be5a8cc09412ef = L.map(
-                "map_e32e55a19986258243be5a8cc09412ef",
+            var map_41a0863e3fb33a147652c8d47de8ede5 = L.map(
+                "map_41a0863e3fb33a147652c8d47de8ede5",
                 {
                     center: [39.0458, -76.6413],
                     crs: L.CRS.EPSG3857,
@@ -60,13 +60,48 @@
 
         
     
-            var tile_layer_c89376985c9886331caf2d70153c0051 = L.tileLayer(
+            var tile_layer_a683e6c65503a855726eba0b8cc25c44 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_c89376985c9886331caf2d70153c0051.addTo(map_e32e55a19986258243be5a8cc09412ef);
+            tile_layer_a683e6c65503a855726eba0b8cc25c44.addTo(map_41a0863e3fb33a147652c8d47de8ede5);
+        
+    
+            var marker_9de1e5c0eb264969ea063e49f33dc32e = L.marker(
+                [39.0619458, -77.0659682],
+                {}
+            ).addTo(map_41a0863e3fb33a147652c8d47de8ede5);
+        
+    
+            var icon_41cce6b7b520bcd7f477d20ec58eb882 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9de1e5c0eb264969ea063e49f33dc32e.setIcon(icon_41cce6b7b520bcd7f477d20ec58eb882);
+        
+    
+        var popup_7f29980e299953dad743ebd8a76cc539 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcf378553d69c47478933a15f6ee1313 = $(`<div id="html_dcf378553d69c47478933a15f6ee1313" style="width: 100.0%; height: 100.0%;"><strong>2024 Hispanic Heritage Month Celebration</strong><br>12501 Dalewood Dr, Silver Spring, MD 20906</div>`)[0];
+                popup_7f29980e299953dad743ebd8a76cc539.setContent(html_dcf378553d69c47478933a15f6ee1313);
+            
+        
+
+        marker_9de1e5c0eb264969ea063e49f33dc32e.bindPopup(popup_7f29980e299953dad743ebd8a76cc539)
+        ;
+
+        
+    
+    
+            marker_9de1e5c0eb264969ea063e49f33dc32e.bindTooltip(
+                `<div>
+                     2024 Hispanic Heritage Month Celebration
+                 </div>`,
+                {"sticky": true}
+            );
         
 </script>
 </html>
